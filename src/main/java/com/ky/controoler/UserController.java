@@ -37,6 +37,7 @@ public class UserController {
                            @RequestParam(name="rows",defaultValue = "2")int rows  ){
 
         PageInfo<User> pageInfo = userService.page(page,rows);
+        System.out.println("hello");
         return pageInfo;
     }
 
